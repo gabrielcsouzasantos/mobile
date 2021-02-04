@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_layout_prato"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#A1CAF1">
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.5"
+        android:src="@drawable/icon"
+        android:scaleType="fitXY"
+        android:background="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tv_tarefa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_gravity="center"
+        android:text="@string/nome_da_tarefa"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_feito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feito"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+    />
+
+    <ImageView
+        android:id="@+id/img_view_editar_tarefa"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:padding="10dp"
+        android:src="@drawable/ic_editar"/>
+
+    <ImageView
+        android:id="@+id/img_view_excluir_tarefa"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:padding="10dp"
+        android:src="@drawable/ic_excluir"/>
+
+
+
+</LinearLayout>
